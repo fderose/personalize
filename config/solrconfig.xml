@@ -1,0 +1,14 @@
+<!-- 
+  Add the following lines where appropriate in the solrconfig.xml file for the
+  Solr instance in which you want to use the personalize function.
+
+  Of course, you must change the value supplied to the class attribute to
+  point to where you have built the jar on your system.
+
+  The alias "gwre" (for "Guidewire personalize function") can then be used
+  inside Solr queries to invoke the personalize function.
+-->
+
+<lib path="/Users/fderose/personalize/out/artifacts/personalize_jar/personalize.jar"/>
+
+<valueSourceParser name="gwre" class="com.guidewire.solr.PersonalizeFunctionParser" />
