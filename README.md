@@ -60,9 +60,9 @@ We can accomplish this in Solr by constructing the following query:
 
 where
 
-  * bond is the search term
-  * <username> is the name of the user issuing the search, Frank or Peter
-  * user=<username> is an assignment of the user name to the local variable user
+  * __``bond``__ is the search term
+  * __<username>__ is the name of the user issuing the search, Frank or Peter
+  * __user=<username>__ is an assignment of the user name to the local variable user
   * $user is a dereferencing of that local variable user
   * category is the category field from the book document
   * personalize is a function that we have written and plugged in to Solr by extending the Solr/Lucene [ValueSource](http://lucene.apache.org/core/4_10_2/queries/org/apache/lucene/queries/function/ValueSource.html?is-external=true) and [ValueSourceParser](http://lucene.apache.org/solr/4_10_2/solr-core/org/apache/solr/search/ValueSourceParser.html) classes.
