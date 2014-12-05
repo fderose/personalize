@@ -61,13 +61,13 @@ We can accomplish this in Solr by constructing the following query:
 where
 
   * __``bond``__ is the search term
-  * __``\<username\>``__ is the name of the user issuing the search, Frank or Peter
-  * __``user=\<username\>``__ is an assignment of the user name to the local variable user
+  * __``<username>``__ is the name of the user issuing the search, Frank or Peter
+  * __``user=<username>``__ is an assignment of the user name to the local variable user
   * __``$user``__ is a dereferencing of that local variable user
   * __``category``__ is the category field from the book document
   * __``personalize``__ is a function that we have written and plugged in to Solr by extending the Solr/Lucene [ValueSource](http://lucene.apache.org/core/4_10_2/queries/org/apache/lucene/queries/function/ValueSource.html?is-external=true) and [ValueSourceParser](http://lucene.apache.org/solr/4_10_2/solr-core/org/apache/solr/search/ValueSourceParser.html) classes.
 
-The personalize function uses the value stored in the user parameter as a key to look up the user’s profile. It then looks to see if the category passed in as the second parameter is contained in the list of categories of book the user is interested in. If it is, the personalize function returns a boost. If not, it returns 0.
+The __``personalize``__ function uses the value stored in the ``__user``__ parameter as a key to look up the user’s profile. It then looks to see if the value stored in the __``category parameter``__ is contained in the list of categories of book the user is interested in. If it is, the __``personalize``__ function returns a boost. If not, it returns 0.
 
 The Solr query infrastructure then calculates a final score by combining the boost returned by the personalize function with the relevancy score based on how well the book title matched the search term “bond” (this relevancy score having been calculated by Lucene's [Similarity](http://lucene.apache.org/core/4_10_2/core/org/apache/lucene/search/similarities/Similarity.html) class).
 
