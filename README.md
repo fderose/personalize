@@ -67,7 +67,7 @@ where
   * __``category``__ is the category field from the book document
   * __``personalize``__ is a function that we have written and plugged in to Solr by extending the Solr/Lucene [ValueSource](http://lucene.apache.org/core/4_10_2/queries/org/apache/lucene/queries/function/ValueSource.html?is-external=true) and [ValueSourceParser](http://lucene.apache.org/solr/4_10_2/solr-core/org/apache/solr/search/ValueSourceParser.html) classes.
 
-The __``personalize``__ function uses the value stored in the ``__user``__ parameter as a key to look up the user’s profile. It then looks to see if the value stored in the __``category parameter``__ is contained in the list of categories of book the user is interested in. If it is, the __``personalize``__ function returns a boost. If not, it returns 0.
+The __``personalize``__ function uses the value stored in the __``user``__ parameter as a key to look up the user’s profile. It then looks to see if the value stored in the __``category``__ parameter is contained in the list of categories of book the user is interested in. If it is, the __``personalize``__ function returns a boost. If not, it returns 0.
 
 The Solr query infrastructure then calculates a final score by combining the boost returned by the personalize function with the relevancy score based on how well the book title matched the search term “bond” (this relevancy score having been calculated by Lucene's [Similarity](http://lucene.apache.org/core/4_10_2/core/org/apache/lucene/search/similarities/Similarity.html) class).
 
