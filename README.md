@@ -52,11 +52,11 @@ Now, suppose that Frank issues a search for books by the supplying the search te
         category: espionage
     
 
-But, it is unclear how these results should be ordered since both of them contain a single term in the title field that matches the search term. onsideration of criterion C2 (how relevant the book is to the user’s interests) suggests, however, that the first book would be better suited to Frank’s interests and should be returned at the top of the list. If Peter issues the same search, the order should be reversed.
+But, it is unclear based on just criterion C1 how these results should be ordered when returning them to Frank since both of them contain a single term in the title field that matches the search term. Consideration of criterion C2 (how relevant the book is to the user’s interests) suggests, however, that the first book is better suited to Frank’s interests and should be returned at the top of the list. If Peter issues the same search, the order should be reversed.
 
 We can accomplish this in Solr by constructing the following query:
 
-  q=title:bond _val_:”personalize($user, category)”&user=<username>
+    q=title:bond _val_:”personalize($user, category)”&user=<username>
 
 where
 
