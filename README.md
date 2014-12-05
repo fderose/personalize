@@ -45,8 +45,7 @@ Now, suppose that Frank issues a search for books by the supplying the search te
   * title: The British Bond Market
   * author: George Banks
   * category: Financial
-
-
+\
   * title: The Name’s Bond
   * author: Ian Fleming
   * category: espionage
