@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Class-Path: lucene-core-4.10.2-SNAPSHOT.jar solr-core-4.10.2-SNAPSHOT.
- jar lucene-queries-4.10.2-SNAPSHOT.jar
+Class-Path: lucene-core-4.10.2-SNAPSHOT.jar lucene-queries-4.10.2-SNAP
+ SHOT.jar solr-core-4.10.2-SNAPSHOT.jar
 Main-Class: 
 

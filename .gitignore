@@ -1,2 +1,4 @@
-out/*
+out
 *.iml
+.idea
+production
