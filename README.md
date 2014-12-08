@@ -1,7 +1,7 @@
 personalize
 ===========
 
-Solr ValueSource plugin function to personalize search results based on a user's profile
+# Solr ValueSource plugin function to personalize search results based on a user's profile
 
 The task is to build a personalized search routine for a book company like Amazon. (The same routine could be utilized by a video company, like Netflix.) 
 
