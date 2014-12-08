@@ -32,7 +32,7 @@ Suppose we have two users, Frank and Peter. Frank buys only financial books (not
   * name: Frank
   * list of categories: financial
 
-Peter, on the other hand, loves Pussy Galore and is a big fan of spy novels, so Peter’s profile looks like:
+Peter, on the other hand, is a big fan of 007 spy novels, so Peter’s profile looks like:
 
   * name: Peter
   * list of categories: espionage
