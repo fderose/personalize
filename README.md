@@ -76,7 +76,7 @@ In Solr Admin, place the following string in the "q" field:
 
     +title:bond _val_:"personalize($user, category)"
 
-Then, place the following string in the "Raw Parameters Field:"
+Then, place the following string in the "Raw Query Parameters" field:
 
     user=Frank
 
