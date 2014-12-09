@@ -53,7 +53,7 @@ But, it is unclear based just on criterion C1 how these results should be ordere
 
 We can accomplish this in Solr by constructing the following query:
 
-    q=title:bond _val_:”personalize($user, category)”&user=<username>
+    q=+title:bond _val_:"personalize($user, category)"&user=Frank
 
 where
 
@@ -74,7 +74,7 @@ The end result is that the scores of books matching the search terms are boosted
 
 If you issue the following query in Solr Admin
 
-    title:bond _val_:"personalize($user, category)"&user=Frank
+    +title:bond _val_:"personalize($user, category)"&user=Frank
 
 then the "The British Bond Market" book gets scored higher.
 
