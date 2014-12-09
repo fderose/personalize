@@ -85,6 +85,6 @@ public class PersonalizeFunction extends ValueSource {
 
   @Override
   public String description() {
-    return "The Guidewire personalization function";
+    return "personalize";
   }
 }

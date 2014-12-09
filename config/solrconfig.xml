@@ -5,10 +5,10 @@
   Of course, you must change the value supplied to the class attribute to
   point to where you have built the jar on your system.
 
-  The alias "gwre" (for "Guidewire personalize function") can then be used
+  The alias "personalize" (for "Guidewire personalize function") can then be used
   inside Solr queries to invoke the personalize function.
 -->
 
 <lib path="/Users/fderose/personalize/out/artifacts/personalize_jar/personalize.jar"/>
 
-<valueSourceParser name="gwre" class="com.guidewire.solr.PersonalizeFunctionParser" />
+<valueSourceParser name="personalize" class="com.guidewire.solr.PersonalizeFunctionParser" />
