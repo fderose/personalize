@@ -53,7 +53,7 @@ But, it is unclear based just on criterion C1 how these results should be ordere
 
 We can accomplish this in Solr by constructing the following query:
 
-    q=+title:bond _val_:"personalize($user, category)"&user=Frank
+    q=+title:bond _val_:"personalize($user, category)"&user=<username>
 
 where
 
